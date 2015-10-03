@@ -50,8 +50,14 @@ function emojiTest (message) {
     return true;
   }
 
-  var words = message.match(/(:\w+:)/);
+  // check if string is only emoji
+  var stripped = message.replace(/:\w+:/g, '').replace(/\s+/g, '');
+  if (stripped) {
+    return false;
+  }
 
+  // select all emoji
+  var words = message.match(/:(\w+):/g);
   if (!words) {
     return false;
   }
