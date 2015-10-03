@@ -63,10 +63,11 @@ function emojiTest (message) {
   }
 
   for (var i = 0, l = words.length; i < l; i++) {
-    logs && console.log(words[i], isEmoji(words[i]), customEmoji[words[i]], slackEmoji[words[i]]);
-    if (isEmoji(words[i]) ||
-      customEmoji[words[i]] ||
-      slackEmoji[words[i]]) {
+    var word = words[i].substring(1, words[i].length - 1);
+    logs && console.log(word, isEmoji(word), customEmoji[word], slackEmoji[word]);
+    if (isEmoji(word) ||
+      customEmoji[word] ||
+      slackEmoji[word]) {
       continue;
     } else {
       return false;
