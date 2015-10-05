@@ -1,6 +1,6 @@
 # slack-emoji-mode
 
-Adds "Emoji-only mode" to slack. Non-emoji messages are be deleted when the mode is enabled.
+Adds "Emoji-only mode" to slack. Non-emoji messages are deleted when the mode is enabled.
 
 Say `emoji on` to enable emoji mode. Say `emoji off` to disable emoji mode.
 
