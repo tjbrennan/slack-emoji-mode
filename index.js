@@ -20,7 +20,8 @@ var logs = true; // toggle certain logs
 var slackEmoji = {
   ':simple_smile:': 'smiple_smile',
   ':moon:': 'moon',
-  ':rube:': 'rube'
+  ':rube:': 'rube',
+  ':+1:': '+1'
 };
 
 
